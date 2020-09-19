@@ -3,7 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/84303218ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Title -->
+    <title>Keep it</title>
   </head>
-  <body> </body>
+  <body>
+    <!-- Landing section -->
+    <section class="landing-section">
+      <!-- Navbar -->
+      <nav>
+        <div class="button fa" onclick="openSideBar()"> &#xf0c9; </div>
+
+        <ul>
+          <a href="#login-section"><li>Prijava</li></a>
+          <a href="#about-section"><li>O aplikaciji</li></a>
+        </ul>
+      </nav>
+      <!-- Side navabar -->
+      <div class="side-nav">
+        <div class="button fa" onclick="closeSideBar()"> &#xf00d; </div>
+
+        <ul>
+          <a href="#"><li>Pocetna</li></a>
+          <a href="pages/products.html"><li>Nasi proizvodi</li></a>
+          <a href="pages/sign-up.html"><li>Postani deo ekipe</li></a>
+          <a href="#kontakt" onclick="closeSideBar()"><li>Kontakt</li></a>
+        </ul>
+      </div>
+      <!-- End of navbar -->
+      <div class="title-box">
+        <h1> Keep it </h1>
+        <p>
+          Aplikacija za pomoć demonstratorima oko <br />
+          evidencije poena za predmet Elektronsko poslovanje
+        </p>
+        <a href="#login-section"><button class=""> Prijavi se</button></a>
+      </div>
+
+      <div class="landing-img">
+        <img src="/img/boy.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about-section" class="about-section">
+      <div class="about-container">
+        <div class="landing-img">
+          <img src="/img/about-us-boy.svg" alt="" />
+        </div>
+
+        <div class="title-box">
+          <h1> O aplikaciji </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            aliquid sit, in quo sint numquam suscipit necessitatibus aut maxime
+            iure amet, molestiae veniam maiores? Quos sit neque voluptates
+            molestias dolorem ipsa ipsam. Voluptate corporis veritatis neque
+            commodi modi odit laborum tempore obcaecati inventore sed,
+            asperiores dignissimos iusto quaerat, nemo necessitatibus!
+          </p>
+          <a href="#login-section"><button class="">Prijavi se!</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login section -->
+    <section id="login-section" class="login-section">
+      <form action="">
+        <h1>Prijava</h1>
+        <label for="">Korisnicko ime</label>
+        <input type="text" />
+        <label for="">Sifra</label>
+        <input type="password" />
+        <button id="login-btn"> Prijavi se</button>
+      </form>
+    </section>
+
+    <!-- Data section -->
+    <section id="data-section" class="data-section">
+      <div class="cont">
+        <div class="data-box">
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+          <div class="data-item">
+            <div class="row">
+              <div class="index">2017/0047 </div>
+              <div class="name">Mateja Ivanovic</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="/js/main.js"></script>
+  </body>
 </html>
