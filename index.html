@@ -8,35 +8,40 @@
       src="https://kit.fontawesome.com/84303218ae.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- Title -->
     <title>Keep it</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="button fa" onclick="openSideBar()"> &#xf0c9; </div>
+      <ul class="nav-loggedOut">
+        <a href="#login-section"><li>Prijava</li></a>
+        <a href="#about-section"><li>O aplikaciji</li></a>
+      </ul>
+      <ul class="nav-loggedIn">
+        <a id="log-out-btn"><li>Odjavi se</li></a>
+        <a class="userName"><li>Ulogovan kao: </li></a>
+      </ul>
+    </nav>
+    <!-- Side navabar -->
+    <div class="side-nav">
+      <div class="button fa" onclick="closeSideBar()"> &#xf00d; </div>
+
+      <ul>
+        <a href="#"><li>Pocetna</li></a>
+        <a href="pages/products.html"><li>Nasi proizvodi</li></a>
+        <a href="pages/sign-up.html"><li>Postani deo ekipe</li></a>
+        <a href="#kontakt" onclick="closeSideBar()"><li>Kontakt</li></a>
+      </ul>
+    </div>
+    <!-- End of navbar -->
     <!-- Landing section -->
     <section class="landing-section">
-      <!-- Navbar -->
-      <nav>
-        <div class="button fa" onclick="openSideBar()"> &#xf0c9; </div>
-
-        <ul>
-          <a href="#login-section"><li>Prijava</li></a>
-          <a href="#about-section"><li>O aplikaciji</li></a>
-        </ul>
-      </nav>
-      <!-- Side navabar -->
-      <div class="side-nav">
-        <div class="button fa" onclick="closeSideBar()"> &#xf00d; </div>
-
-        <ul>
-          <a href="#"><li>Pocetna</li></a>
-          <a href="pages/products.html"><li>Nasi proizvodi</li></a>
-          <a href="pages/sign-up.html"><li>Postani deo ekipe</li></a>
-          <a href="#kontakt" onclick="closeSideBar()"><li>Kontakt</li></a>
-        </ul>
-      </div>
-      <!-- End of navbar -->
       <div class="title-box">
         <h1> Keep it </h1>
         <p>
@@ -77,71 +82,32 @@
     <section id="login-section" class="login-section">
       <form action="">
         <h1>Prijava</h1>
-        <label for="">Korisnicko ime</label>
-        <input type="text" />
-        <label for="">Sifra</label>
-        <input type="password" />
+        <label for="">Korisničko ime</label>
+        <input id="username" type="text" value="admin" />
+        <label for="">Šifra</label>
+        <input id="password" type="password" value="admin" />
         <button id="login-btn"> Prijavi se</button>
       </form>
     </section>
 
     <!-- Data section -->
     <section id="data-section" class="data-section">
-      <div class="cont">
+      <!-- Title -->
+      <h1>Baza podataka</h1>
+      <!-- Data menu -->
+      <div class="data-menu">
+        <div class="data-option selected-option"> Studenti </div>
+        <div class="data-option"> Demonstratori </div>
+      </div>
+      <!-- Data box -->
+      <div class="data-box-border">
         <div class="data-box">
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
-          <div class="data-item">
-            <div class="row">
-              <div class="index">2017/0047 </div>
-              <div class="name">Mateja Ivanovic</div>
-            </div>
-          </div>
+          <!-- Inserted from scripts -->
         </div>
       </div>
     </section>
 
     <!-- Script -->
-    <script src="/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
