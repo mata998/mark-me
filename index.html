@@ -13,12 +13,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- Title -->
-    <title>Keep it</title>
+    <title>Mark me</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav>
-      <div class="button fa" onclick="openSideBar()"> &#xf0c9; </div>
+      <div id="navBtn" class="button fa"> &#xf0c9; </div>
       <ul class="nav-loggedOut">
         <a href="#login-section"><li>Prijava</li></a>
         <a href="#about-section"><li>O aplikaciji</li></a>
@@ -29,21 +29,24 @@
       </ul>
     </nav>
     <!-- Side navabar -->
-    <div class="side-nav">
-      <div class="button fa" onclick="closeSideBar()"> &#xf00d; </div>
+    <div id="sideNavBtn" class="side-nav">
+      <div class="button fa"> &#xf00d; </div>
 
-      <ul>
-        <a href="#"><li>Pocetna</li></a>
-        <a href="pages/products.html"><li>Nasi proizvodi</li></a>
-        <a href="pages/sign-up.html"><li>Postani deo ekipe</li></a>
-        <a href="#kontakt" onclick="closeSideBar()"><li>Kontakt</li></a>
+      <ul class="side-nav-loggedOut">
+        <a href="#login-section"><li class="first-li">Prijava</li></a>
+        <a href="#about-section"><li>O aplikaciji</li></a>
+      </ul>
+
+      <ul class="side-nav-loggedIn">
+        <a id="side-log-out-btn"><li class="first-li">Odjavi se</li></a>
+        <a class="sideUserName"><li>Ulogovan kao:</li></a>
       </ul>
     </div>
     <!-- End of navbar -->
     <!-- Landing section -->
     <section class="landing-section">
       <div class="title-box">
-        <h1> Keep it </h1>
+        <h1> Mark me </h1>
         <p>
           Aplikacija za pomoć demonstratorima oko <br />
           evidencije poena za predmet Elektronsko poslovanje
@@ -66,12 +69,14 @@
         <div class="title-box">
           <h1> O aplikaciji </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
-            aliquid sit, in quo sint numquam suscipit necessitatibus aut maxime
-            iure amet, molestiae veniam maiores? Quos sit neque voluptates
-            molestias dolorem ipsa ipsam. Voluptate corporis veritatis neque
-            commodi modi odit laborum tempore obcaecati inventore sed,
-            asperiores dignissimos iusto quaerat, nemo necessitatibus!
+            Ovo je aplikacija napravljena kao projekat vezan za temu HTML CSS
+            Javascript. Aplikacija je napravljena kao neka vrsta simulacije koja
+            ilustruje kako bi mogla da izlgeda aplikacija koja bi olaksala
+            buducim demonstratorima evidenciju poena na domacim zadacima.
+            Aplikacija je veoma jednostavna i lepog interfejsa.
+            <br />
+            <br />
+            Autor je Mateja Ivanović 2017/0047
           </p>
           <a href="#login-section"><button class="">Prijavi se!</button></a>
         </div>
