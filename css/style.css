@@ -551,6 +551,13 @@ nav li {
     border-radius: 0px;
   }
 
+  /* Buttons */
+
+  .title-box button,
+  .login-section button {
+    width: 50vw;
+  }
+
   /* Data section */
   .data-menu {
     width: 80vw;
