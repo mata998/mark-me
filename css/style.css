@@ -542,6 +542,15 @@ nav li {
     max-width: 80vw;
   }
 
+  /* Login section */
+
+  .login-section form {
+    height: 100vh;
+    width: 100vw;
+
+    border-radius: 0px;
+  }
+
   /* Data section */
   .data-menu {
     width: 80vw;
